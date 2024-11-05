@@ -1,0 +1,6 @@
+const pi = 3.14159;
+let raio = 4
+
+let area = 4 ** 2 * pi;
+
+console.log(area);

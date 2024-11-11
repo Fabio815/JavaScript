@@ -2,10 +2,10 @@ const pi = 3.14159;
 
 
 function calculaArea(raio){
-    const area = (raio ** 2) * pi;
+    const area = (raio * raio) * pi;
     return area;
 }
 
-const area = calculaArea(4);
+const area = calculaArea(10);
 
 console.log(area);

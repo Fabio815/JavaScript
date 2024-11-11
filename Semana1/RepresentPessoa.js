@@ -32,4 +32,4 @@ adicionarPessoas("Jean", 30, "Blumenau");
 adicionarPessoas("Luz", 21, "Belem");
 adicionarPessoas("Erico", 30, "Gaspar");
 
-imprimirPessoas("jean");
+imprimirPessoas("Robson");

@@ -1,9 +1,26 @@
-const arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arrayNum = [2, 5, 6, 7, 8, 10, 11, 13, 14, 18, 17];
+const arrayPar = [];
+const arrayImpar = [];
 
-for(let i = 0; i < arrayNum.length; i++){
-    console.log(arrayNum[i]);
-}
+let contPar = 0;
+let contImpar = 0;
+arrayNum.forEach(function (elemento) {
+    if(elemento % 2 == 0){
+        arrayPar[contPar] = elemento;
+        contPar++;
+    }
+    else{
+        arrayImpar[contImpar] = elemento;
+        contImpar++;
+    }
+});
 
-for(let i = 10; i >= 0; i--){
-    console.log(arrayNum[i]);
-}
+console.log("Pares: ");
+arrayPar.forEach(function(elemento){
+    console.log(elemento);
+});
+
+console.log("Ìmpares: ");
+arrayImpar.forEach(function(elemento){
+    console.log(elemento);
+});

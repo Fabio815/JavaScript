@@ -1,13 +1,6 @@
-var num = 0;
-var cont = 0;
+var num = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+console.log(num.length);
 
-while(cont <= 10){
-    console.log(cont);
-    cont++;
+for(let i = num.length; i >= 0; i--){
+    console.log(`${i} = ${num[i]}`);
 }
-console.log("\n");
-do
-{
-    console.log(num);
-    num++;
-}while(num > 10);

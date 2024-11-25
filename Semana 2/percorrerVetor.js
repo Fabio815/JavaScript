@@ -6,8 +6,9 @@ let contPar = 0;
 let contImpar = 0;
 arrayNum.forEach(function (elemento) {
     if(elemento % 2 == 0){
-        arrayPar[contPar] = elemento;
-        contPar++;
+        /*arrayPar[contPar] = elemento;
+        contPar++;*/
+        arrayPar.push(elemento);
     }
     else{
         arrayImpar[contImpar] = elemento;

@@ -14,13 +14,9 @@ class Conta{
     }
 
     transferencia(conta, valor){
-        var msg;
         if(this._saldo >= valor){
             this.sacar(valor);
             conta.deposito(valor);
-            msg = "Saque feito com sucesso";
-        } else{
-            msg = "Saldo insuficiênte";
         }
     }
     exibir = () =>{

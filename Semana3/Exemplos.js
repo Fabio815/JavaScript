@@ -43,6 +43,9 @@ console.log(soma(20));*/
 //Caso tenha apenas um parametro.
 /*const soma = num => {return num + 5}
 console.log(soma(5));*/
+
+
+
 let num = 10;
 function verificar(num, callback) {
     let resultado = num % 2 == 0 ? "Par" : "Impar";

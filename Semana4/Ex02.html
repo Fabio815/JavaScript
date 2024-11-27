@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+</head>
+<body>
+    <div>
+        <input id="texto" type="text" placeholder="Digite algo">
+        <p id="textT"></p>
+        <button id="btn">Clique</button>
+    </div>
+
+    <script>
+        let texto = document.getElementById("texto");
+        let palavra = document.getElementById("textT");
+        let botao = document.querySelector("#btn");
+
+        botao.addEventListener('click', ()=>{
+            palavra.innerHTML = texto.value;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+    <style>
+        body{
+            min-height: 100lvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Clique</button>
+
+    <script>
+        let botao = document.getElementById("btn");
+        /*function mudarCor(){
+            document.body.style.backgroundColor = `rgb(${cores()}, ${cores()}, ${cores()})`;
+        }*/
+        function cores(){
+            return Math.floor(Math.random()*255)+1;
+        }
+
+        botao.addEventListener('click', ()=>{
+            document.body.style.backgroundColor = `rgb(${cores()}, ${cores()}, ${cores()})`;
+        });
+    </script>
+</body>
+</html>

@@ -24,8 +24,11 @@
     </div>
 
     <script>
-        document.getElementById("div1").addEventListener('click', function() {
+        document.getElementById("div1").addEventListener('mouseover', function() {
             this.style.backgroundColor = 'red';
+        });
+        document.getElementById("div1").addEventListener('mouseout', function() {
+            this.style.backgroundColor = 'olivedrab';
         });
     </script>
 </body>

@@ -22,11 +22,13 @@
             document.body.style.backgroundColor = `rgb(${cores()}, ${cores()}, ${cores()})`;
         }*/
         function cores(){
-            return Math.floor(Math.random()*255)+1;
+            return Math.floor(Math.random()*255);
         }
 
         botao.addEventListener('click', ()=>{
-            document.body.style.backgroundColor = `rgb(${cores()}, ${cores()}, ${cores()})`;
+            let cor = `rgb(${cores()}, ${cores()}, ${cores()})`;
+            document.body.style.backgroundColor = cor;
+            botao.innerHTML = cor;
         });
     </script>
 </body>

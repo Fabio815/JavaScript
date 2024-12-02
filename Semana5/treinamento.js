@@ -50,12 +50,12 @@ const pessoas = [
     { nome: "José", idade: 30 },
     { nome: "Maria", idade: 32 }
 ];
-// pessoas.sort((a, b) => a.idade - b.idade);
-// pessoas.forEach(element => {
-//     console.log(element);
-// });
-
-pessoas.reverse();
+pessoas.sort((a, b) => b.idade - a.idade);
 pessoas.forEach(element => {
     console.log(element);
 });
+
+// pessoas.reverse();
+// pessoas.forEach(element => {
+//     console.log(element);
+// });

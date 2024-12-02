@@ -1,3 +1,9 @@
-const numeros = [1, 2, 3, 4, 5];
-const soma = numeros.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
+const time = [
+    {time: "1", pontos: 30}, 
+    {time: "2", pontos: 25}, 
+    {time: "3", pontos: 65}, 
+    {time: "4", pontos: 4}, 
+    {time: "5", pontos: 65}, 
+]
+const soma = time.reduce((vAnt, vAtual) => vAnt + vAtual.pontos, 0);
 console.log(soma);

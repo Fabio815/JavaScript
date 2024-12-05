@@ -172,3 +172,11 @@ function acharPoke(poke){
 // const json = '{"nome": "José", "Pais": "Brasil", "Idade": 30}';
 // const ob = JSON.parse(json);
 // console.log(ob.nome);
+
+// const v = [3, 4, 5, 6, 5, 6, 7, 8, 9];
+// var [r, t, g, n, ...f] = v;
+// console.log(r);
+// console.log(t);
+// console.log(g);
+// console.log(n);
+// console.log(f);

@@ -17,15 +17,16 @@ const numeros = [1, 4, 7, 3, 5, 7, 8, 10];
 //     console.log(elemento);
 // });
 
-// const pessoas = [
-//     { nome: "Pedro", idade: 28 },
-//     { nome: "Roberto", idade: 25 },
-//     { nome: "José", idade: 30 },
-//     { nome: "Maria", idade: 32 }
-// ];
+const pessoas = [
+    { nome: "Pedro", idade: 28 },
+    { nome: "Roberto", idade: 25 },
+    { nome: "José", idade: 30 },
+    { nome: "Maria", idade: 32 }
+];
 
-// const imprimi = nome => (console.log(nome));
-// const result = pessoas.filter(elemento => elemento.idade >= 30).map(imprimi);
+const imprimi = nome => (console.log(nome));
+const result = pessoas.filter(elemento => elemento.idade >= 30).map(imprimi);
+//console.log(result[0]);
 
 // const array = [10, 3, 5, 6, 7, 4];
 
@@ -44,12 +45,12 @@ const numeros = [1, 4, 7, 3, 5, 7, 8, 10];
 // array.sort(verifica);
 // console.log(array);
 
-const pessoas = [
-    { nome: "Pedro", idade: 28 },
-    { nome: "Roberto", idade: 25 },
-    { nome: "José", idade: 30 },
-    { nome: "Maria", idade: 32 }
-];
+// const pessoas = [
+//     { nome: "Pedro", idade: 28 },
+//     { nome: "Roberto", idade: 25 },
+//     { nome: "José", idade: 30 },
+//     { nome: "Maria", idade: 32 }
+// ];
 pessoas.sort((a, b) => b.idade - a.idade);
 pessoas.forEach(element => {
     console.log(element);

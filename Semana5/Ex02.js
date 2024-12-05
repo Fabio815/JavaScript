@@ -5,5 +5,5 @@ const time = [
     {time: "4", pontos: 4}, 
     {time: "5", pontos: 65}, 
 ]
-const soma = time.reduce((vAnt, vAtual) => vAnt + vAtual.pontos, 0);
+const soma = time.reduce((vAnt, vAtual) => vAnt + vAtual.pontos, 2);
 console.log(soma);

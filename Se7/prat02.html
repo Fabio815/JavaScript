@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+    <style>
+        .teste{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <p id="teste" class="teste"></p>
+
+    <script>
+        const texto = document.getElementById("teste");
+        let promise = new Promise((resultado, rejeitado) => {
+            var mudaSinal = true;
+            setTimeout(() => {
+                if(mudaSinal){
+                    resultado("Sinal verde");
+                } else {
+                    rejeitado("Sinal vermelho");
+                }
+            }, 3000)
+        })
+
+        promise.then((retorno) => {
+            texto.innerHTML = retorno;
+            texto.style.color = "green";
+        });
+        promise.catch((retorno) => {
+            texto.innerHTML = retorno;
+            texto.style.color = "red";
+        })
+
+        texto.innerHTML = "Carregando...";
+    </script>
+</body>
+</html>

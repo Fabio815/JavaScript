@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+    <style>
+        .teste{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <p id="teste" class="teste"></p>
+
+    <script>
+        const texto = document.getElementById("teste");
+        var mudaSinal = false;
+
+        setTimeout(() => {
+            mudaSinal = true;
+        }, 3000);
+
+        if(mudaSinal){
+            texto.innerHTML = "Sinal verde";
+            texto.style.color = "green";
+        } else {
+            texto.innerHTML = "Sinal vermelho";
+            texto.style.color = "red";
+        }
+        
+        texto.innerHTML = "Trocando...";
+    </script>
+</body>
+</html>

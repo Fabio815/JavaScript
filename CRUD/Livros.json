@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "Nome": "O Guia Definitivo do Mochileiro das Galáxias",
+    "Autor": "Douglas Adams",
+    "Ano": 2002
+  },
+  {
+    "id": 2,
+    "Nome": "A Revolução dos Bichos",
+    "Autor": "George Orwell",
+    "Ano": 1945
+  },
+  {
+    "id": 3,
+    "Nome": "O Hobbit",
+    "Autor": "J.R.R Tolkin",
+    "Ano": 1937
+  },
+  {
+    "id": 4,
+    "Nome": "A Sociedade do Anel",
+    "Autor": "J.R.R Tolkin",
+    "Ano": 1954
+  },
+  {
+    "id": 5,
+    "Nome": "As Crônicas de Gelo e Fogo",
+    "Autor": "George R.R Martin",
+    "Ano": 1996
+  },
+  {
+    "id": 6,
+    "Nome": "pao",
+    "Autor": "Fábio",
+    "Ano": 2024
+  },
+  {
+    "id": 7,
+    "Nome": "Vinte Mil Léguas Submarinas",
+    "Autor": "Júlio Verne",
+    "Ano": 2006
+  }
+]

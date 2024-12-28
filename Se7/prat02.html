@@ -16,7 +16,7 @@
     <script>
         const texto = document.getElementById("teste");
         let promise = new Promise((resultado, rejeitado) => {
-            var mudaSinal = true;
+            var mudaSinal = false;
             setTimeout(() => {
                 if(mudaSinal){
                     resultado("Sinal verde");
@@ -29,7 +29,7 @@
         promise.then((retorno) => {
             texto.innerHTML = retorno;
             texto.style.color = "green";
-        });
+        })
         promise.catch((retorno) => {
             texto.innerHTML = retorno;
             texto.style.color = "red";

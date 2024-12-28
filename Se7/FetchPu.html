@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn_listar">Listar</button>
+    <button id="btn_adicionar">Adicionar</button>
+    <div id="dadosPokemons"></div>
+    <script>
+        var imprime = document.getElementById("dadosPokemons");
+        var btnListar = document.getElementById("btn_listar");
+        var btnAdicionar = document.getElementById("btn_adicionar");
+
+        const listar = () =>{
+            fetch("obj.json")
+            .then(conver => conver.json())
+            .then(dados => {
+                dados.map((elemento) => {
+                    var mostrar = `
+                        <ul>
+                            <li>Nome: ${elemento.nome}</li>
+                            <li>Tipo: ${elemento.tipo}</li>
+                            <ul>
+                                Status:
+                                <li>Vida: ${elemento.status.HP}</li>
+                                <li>Ataque: ${elemento.status.Ataque}</li>    
+                                <li>Defesa: ${elemento.status.Defesa}</li>    
+                                <li>SpAtaque: ${elemento.status.SpAtaque}</li>    
+                                <li>SpDefesa: ${elemento.status.SpDefesa}</li>    
+                                <li>Velocidade: ${elemento.status.Velocidade}</li>   
+                            </ul>
+                        </ul>
+                        <br>
+                    `
+                    imprime.innerHTML += mostrar;
+                })
+            })
+        }
+        let objP = {
+            nome: "Moltres",
+            tipo: "Fogo",
+            status: {
+                HP: 45,
+                Ataque: 49,
+                Defesa: 49,
+                SpAtaque: 65,
+                SpDefesa: 65,
+                Velocidade: 45
+            }
+        }
+        let enviado = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(objP)
+        }
+
+        const adicionar = () => {
+            fetch("http://localhost:3000/pokemons", enviado)
+            .then(resp => resp.json())
+            .then(res => {
+                console.log(res);
+            })
+        }
+        btnListar.addEventListener('click', ()=>{listar()});
+        //Para executar. json-server --watch db.json
+        btnAdicionar.addEventListener('click', ()=>{adicionar()});
+    </script>
+</body>
+</html>

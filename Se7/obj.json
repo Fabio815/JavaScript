@@ -1,0 +1,67 @@
+ [{
+    "nome": "Bulbasaur",
+    "tipo": "Grama/Venenoso",
+    "status": {
+        "HP": 45,
+        "Ataque": 49,
+        "Defesa": 49,
+        "SpAtaque": 65,
+        "SpDefesa": 65,
+        "Velocidade": 45
+    }
+}, {
+    "nome": "Charmander",
+    "tipo": "Fogo",
+    "status": {
+        "HP": 39,
+        "Ataque": 52,
+        "Defesa": 43,
+        "SpAtaque": 60,
+        "SpDefesa": 50,
+        "Velocidade": 65
+    }
+}, {
+    "nome": "Squirtle",
+    "tipo": "Água",
+    "status": {
+        "HP": 44,
+        "Ataque": 48,
+        "Defesa": 65,
+        "SpAtaque": 50,
+        "SpDefesa": 64,
+        "Velocidade": 43
+    }
+}, {
+    "nome": "Caterpie",
+    "tipo": "Inseto",
+    "status": {
+        "HP": 45,
+        "Ataque": 49,
+        "Defesa": 49,
+        "SpAtaque": 65,
+        "SpDefesa": 65,
+        "Velocidade": 45
+    }
+}, {
+    "nome": "Nidoking",
+    "tipo": "Terra/Venenoso",
+    "status": {
+        "HP": 81,
+        "Ataque": 102,
+        "Defesa": 77,
+        "SpAtaque": 85,
+        "SpDefesa": 75,
+        "Velocidade": 85
+    }
+}, {
+    "nome": "Weedle",
+    "tipo": "Inseto",
+    "status": {
+        "HP": 40,
+        "Ataque": 35,
+        "Defesa": 30,
+        "SpAtaque": 30,
+        "SpDefesa": 20,
+        "Velocidade": 20
+    }
+}]

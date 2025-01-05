@@ -1,7 +1,8 @@
 const { rejects } = require('assert');
 const { error } = require('console');
-const fs = require('fs');
 const { json } = require('stream/consumers');
+
+const fs = require('fs');
 const caminhoArquivo = 'C:/Users/fabio/Desktop/JavaScript/CRUD/Livros.json';
 let novoItem = 
     {
@@ -17,6 +18,7 @@ let novo = {
     Autor: "Júlio Verne",
     Ano: 2006
 }
+
 //CREATE
 const Adicionar = (caminho, livroParaAdidiconar) =>{
     const promiseCall = (resultado, reject) =>{
@@ -117,7 +119,7 @@ const Modificar = (caminho, livroAtualizado, id) => {
     const promiseCall = (resultado, rejects) => {
         fs.readFile(caminho, 'utf-8', (erro, dados) =>{
             if(erro){
-                rejects("Erro: ", dados);
+                return rejects("Erro: ", dados);
             }
             try{
                 const livros = JSON.parse(dados);
@@ -188,7 +190,7 @@ const Mostrar = (livro) =>{
 })
 .catch(erro => console.log(erro));*/
 
-Modificar(caminhoArquivo, novo, 7)
+/*Modificar(caminhoArquivo, novo, 7)
 .then(resultado => {
     if(resultado){
         console.log(resultado)
@@ -196,4 +198,4 @@ Modificar(caminhoArquivo, novo, 7)
 })
 .catch(erro => {
     console.log(erro);
-})
+})*/

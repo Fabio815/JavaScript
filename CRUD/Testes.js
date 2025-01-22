@@ -4,7 +4,7 @@
 // console.log(user.Livros[0]);
 
 //READ
-//Porém é melhor usarmos a fs que é uma biblioteca nativa do JS para pegar o JSON, porque ela tem função assincrona.
+//Porém é melhor usarmos a fs que é uma biblioteca nativa do node.js para pegar o JSON, porque ela tem função assincrona.
 const fs = require('fs');
 const caminhoArquivo = 'C:/Users/fabio/Desktop/JavaScript/CRUD/Livros.json'
 /*fs.readFile(caminhoArquivo, 'utf-8', (error, dados) => {

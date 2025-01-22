@@ -79,8 +79,9 @@ const Remover = (caminho, nome, autor) => {
                 fs.writeFile(caminho, JSON.stringify(livroAchado, null, 2), (erro) => {
                     if(erro){
                         reject("Algo deu errdo... ", erro);
+                    } else {
+                        resultado("Item excluído com sucesso!");
                     }
-                    resultado("Item excluído com sucesso!");
                 });
             } catch (error){
                 reject(error);
@@ -96,7 +97,6 @@ const Procurar = (caminho, nome, autor) =>{
             if(erro){
                return reject("Algo deu errado: ", erro);
             }
-
             try{
                 const livros = JSON.parse(dados);
                 const achado = livros.find(elemento => elemento.Nome == nome && elemento.Autor == autor);
@@ -104,7 +104,7 @@ const Procurar = (caminho, nome, autor) =>{
                     resultado(achado);
                     Mostrar(achado);
                 } else {
-                    resultado(null);
+                    reject("Livro não encontrado");
                 }
 
             } catch(err){
@@ -150,8 +150,6 @@ const Mostrar = (livro) =>{
 .then(resultado => {
     if(resultado){
         console.log("Livro encontrado!");
-    } else {
-        console.log("Livro não encontrado!");
     }
 })
 .catch(erro => {
@@ -162,8 +160,6 @@ const Mostrar = (livro) =>{
 .then(resultado => {
     if(resultado){
         console.log("Livro Adicionado com sucesso!");
-    } else {
-        console.log("Livro não adicionado... Tente novamente");
     }
 })
 .catch(erro => {
@@ -174,21 +170,19 @@ const Mostrar = (livro) =>{
 .then(resultado => {
     if(resultado){
         console.log("Todos os livros");
-    } else {
-        console.log("Algo deu errado.");
     }
 })
 .catch(erro => {
     console.log(erro);
 });*/
 
-/*Remover(caminhoArquivo, "pao 2", "Fábio")
+Remover(caminhoArquivo, "pao", "Fábio")
 .then(resultado => {
     if(resultado){
         console.log(resultado);
     }
 })
-.catch(erro => console.log(erro));*/
+.catch(erro => console.log(erro));
 
 /*Modificar(caminhoArquivo, novo, 7)
 .then(resultado => {
